@@ -18,13 +18,11 @@
 //! Each event uses a single descriptive `Symbol` as its topic so that
 //! consumers can filter by topic when subscribing to contract events.
 
-use crate::types::{BreachType, MigrationReport, Role, RoleChangeAction, Severity, ShipmentStatus};
-use soroban_sdk::{Address, Bytes, BytesN, Env, Symbol};
 use crate::types::{
     BreachType, EscrowFreezeReason, MigrationReport, Role, RoleChangeAction, Severity,
     ShipmentStatus,
 };
-use soroban_sdk::{xdr::ToXdr, Address, BytesN, Env, Symbol};
+use soroban_sdk::{Address, Bytes, BytesN, Env, Symbol};
 
 pub const EVENT_SCHEMA_VERSION: u32 = 2;
 

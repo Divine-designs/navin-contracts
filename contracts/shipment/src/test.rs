@@ -10208,6 +10208,9 @@ fn test_get_canonical_hash() {
     fields.push_back(456_u64.into_val(&env));
     let hash3 = client.get_canonical_hash(&fields);
     assert_ne!(hash1, hash3);
+}
+
+#[test]
 fn test_report_condition_breach_limit_exceeded() {
     let (env, client, admin, token_contract) = setup_shipment_env();
     client.initialize(&admin, &token_contract);

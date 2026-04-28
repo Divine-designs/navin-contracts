@@ -311,6 +311,8 @@ pub fn compute_offchain_payload_hash(
     fields: soroban_sdk::Vec<soroban_sdk::Val>,
 ) -> BytesN<32> {
     env.crypto().sha256(&fields.to_xdr(env)).into()
+}
+
 /// Validate cross-field shipment state-machine invariants.
 ///
 /// This validator protects against impossible state combinations and is intended
