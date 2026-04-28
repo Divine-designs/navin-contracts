@@ -6661,13 +6661,7 @@ fn test_resolve_dispute_returns_invalid_hash() {
         crate::ShipmentStatus::Disputed,
     );
 
-    client.resolve_dispute(
-        &admin,
-        &shipment_id,
-        &crate::DisputeResolution::ReleaseToCarrier,
-        &crate::DisputeResolution::RefundToCompany,
-        &zero_hash,
-    );
+    client.resolve_dispute(&carrier, &shipment_id, &crate::DisputeResolution::RefundToCompany, &zero_hash);
 }
 
 #[test]

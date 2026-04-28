@@ -79,6 +79,24 @@ mod test_creation_quota;
 #[cfg(test)]
 mod test_proposal_digest;
 
+// ── Fuzz / property-based test harnesses ─────────────────────────────────────
+#[cfg(test)]
+mod fuzz_storage_operations;
+#[cfg(test)]
+mod fuzz_ttl_management;
+#[cfg(test)]
+mod fuzz_escrow_lifecycle;
+#[cfg(test)]
+mod fuzz_escrow_arithmetic;
+#[cfg(test)]
+mod fuzz_milestone_releases;
+#[cfg(test)]
+mod fuzz_rbac_authorization;
+#[cfg(test)]
+mod fuzz_role_assignment;
+#[cfg(test)]
+mod fuzz_wallet_auth_integration;
+
 pub use config::*;
 pub use consistency::*;
 pub use diagnostics::*;
