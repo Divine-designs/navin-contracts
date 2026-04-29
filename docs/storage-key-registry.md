@@ -105,3 +105,5 @@ These ranges are policy ranges for planning and review safety; they are not runt
 2. Update this registry (group + rationale).
 3. Add/adjust tests for serialization/storage stability where applicable.
 4. Update `scripts/release-check.sh` docs checks if new public APIs/errors are introduced.
+
+// Starting on the Task
